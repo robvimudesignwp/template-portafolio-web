@@ -1,0 +1,105 @@
+/*========================= Nav =============================*/
+.menu-toggle{
+	cursor: pointer;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	width: auto;
+	z-index: 3;
+}
+
+.menu-toggle .fa{
+	color: #2177aa;
+    display: block;
+    font-size: 28px;
+    line-height: 0;
+    margin: 0 0 8px 0;
+    transition: all 800ms ease-out;
+}
+
+.menu-toggle.close .fa{
+	transform: rotate(180deg);
+}
+
+.menu-toggle.close .fa:nth-child(1){
+	transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.close .fa:nth-child(2){
+	opacity: 0;
+}
+
+.menu-toggle.close .fa:nth-child(3){
+	transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu{
+	background: rgba(255, 255, 255, 0.9);
+	box-sizing: border-box;
+	border-left: 1px solid #e4e4e4;
+	height: 100vh;
+	padding: 50px;
+	position: fixed;
+	right: 0;
+	transform: translate3d(100%, 0, 0);
+	transition: all 600ms ease-out;
+	top: 0;
+	visibility: hidden;
+	width: 30%;
+}
+
+.menu.show{
+	transform: translate3d(0,0,0);
+    visibility: visible;
+}
+
+.menu-nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-nav a{
+    display: block;
+    font-size: 28px;
+    padding: 7px 0 8px 0;
+    text-decoration: none;
+}
+
+.menu-nav a,
+.menu-nav a:visited {
+	color: #2177aa;
+}
+
+.menu-nav a:hover{
+	color: #07192F;
+}
+
+@media (max-width: 1200px){
+	.menu{
+		width: 40%;
+	}
+}
+
+@media (max-width: 992px){
+	.menu{
+		width: 50%;
+	}
+}
+
+@media (max-width: 768px){
+	.menu{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
